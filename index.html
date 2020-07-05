@@ -340,10 +340,10 @@ mixpanel.init("80da856588afb08584b848773a59682d", {batch_requests: true})</scrip
               myform.find("button").text("Sending...");
               emailjs.send(service_id, template_id, params)
               	.then(function(){
-                   alert("Sent!");
+                   alert("Thank you for contacting us. We will get back to you shortly.");
                    myform.find("button").text("Send");
                  }, function(err) {
-                   alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+                   alert("Sorry, we encountered some error while sending your email. Please reach out to us on Phone/whatsapp.");
                    myform.find("button").text("Send");
                 });
 
